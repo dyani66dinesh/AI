@@ -1,0 +1,54 @@
+Autocorrect typos, check for matching terms, PII, and classify.
+{
+  "OriginalText": "You are so lzay!\nQuestions? email me at somename@microsoft.com or call me at 1(800)642-7676\nYou are so full of crap!",
+  "NormalizedText": "You   lzay!\nQuestions? email   somename@microsoft.com     1(800)642-7676\nYou     crap!",
+  "AutoCorrectedText": "You are so lazy!\nQuestions? email me at somename@microsoft.com or call me at 1(800)642-7676\nYou are so full of crap!",
+  "Misrepresentation": null,
+  "Classification": {
+    "Category1": {
+      "Score": 0.004599433857947588
+    },
+    "Category2": {
+      "Score": 0.22512967884540558
+    },
+    "Category3": {
+      "Score": 0.9879999756813049
+    },
+    "ReviewRecommended": true
+  },
+  "Status": {
+    "Code": 3000,
+    "Description": "OK",
+    "Exception": null
+  },
+  "PII": {
+    "Email": [
+      {
+        "Detected": "somename@microsoft.com",
+        "SubType": "Regular",
+        "Text": "somename@microsoft.com",
+        "Index": 40
+      }
+    ],
+    "SSN": [],
+    "IPA": [],
+    "Phone": [
+      {
+        "CountryCode": "US",
+        "Text": "1(800)642-7676",
+        "Index": 77
+      }
+    ],
+    "Address": []
+  },
+  "Language": "eng",
+  "Terms": [
+    {
+      "Index": 81,
+      "OriginalIndex": 111,
+      "ListId": 0,
+      "Term": "crap"
+    }
+  ],
+  "TrackingId": "ef7fbec6-15c5-4fa2-856d-55f997220700"
+}
