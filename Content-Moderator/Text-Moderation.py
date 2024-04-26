@@ -1,7 +1,3 @@
-#CONTENT_MODERATOR_ENDPOINT = "https://dyanicontentmoderator3.cognitiveservices.azure.com/"
-#subscription_key = "2fad9360e0cf43e1a126faac411a0497"
-#Image_Folder_Path="C:/DELETE/content_moderator_text_moderation.txt"
-
 import os.path
 from pprint import pprint
 import time
@@ -42,4 +38,3 @@ with open(os.path.join(TEXT_FOLDER, 'content_moderator_text_moderation.txt'), "r
     )
     assert isinstance(screen, Screen)
     pprint(screen.as_dict())
-    
